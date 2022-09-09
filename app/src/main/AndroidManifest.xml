@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hightech.arcade">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Arcade"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.hightech.arcade.JungleRun.JungleRunActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.JungleRun.GameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.JungleRun.GameOver"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.AndroidDoodle.LeaderDoodle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.AndroidDoodle.DoodleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.AndroidDoodle.DoodleGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.Future.LeaderActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.Future.GameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.Future.FutureActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.hightech.arcade.JungleEscape.JungleEscapeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.JungleEscape.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.JungleEscape.HighScore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hightech.arcade.Global.GlobalLeaderboard" />
+        <activity
+            android:name="com.hightech.arcade.Global.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
